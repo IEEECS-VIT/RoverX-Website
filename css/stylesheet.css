@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.section{
+    width: 100%;
+    height: 100vh;
+}
+.section_wrapper{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+#landing{
+    /*margin-left: -4px;*/
+    background-image: url("../Assets/bg.svg");
+    background-size: cover;
+}
+nav{
+    background-color: transparent;
+}
+nav li a{
+    color: #689f38;
+    font-size: 20px;
+}
+nav li>a:hover{
+    opacity: 0.4;
+}
+.brand-logo img{
+    width: 300px;
+    height: 85px;
+}
+@media (min-width: 768px) {
+    .brand-logo{
+        margin-left:30px;
+    }
+}
+.logoWrap{
+    max-height: 10%;
+    max-width: 35%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.caretWrap{
+    position: absolute;
+    width: 50px;
+    height:50px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,50%);
+}
