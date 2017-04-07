@@ -55,3 +55,33 @@ nav li>a:hover{
     transition: transform 1s ease-out;
     transform: translateY(-50%);
 }
+.footer_wrapper{
+    background-color: #212121;
+    margin: 0;
+    /*height: inherit;*/
+}
+.footerMember{
+    height: 100px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.social{
+    display: inline-block;
+    margin-left: 10px;
+    background-color:#434343;
+    height: 25px;
+    width: 25px;
+}
+.social i{
+    font-size: 24px;
+    color: black;
+}
+.social:hover{
+    background-color:#689f38;
+}
+#blog{
+    margin-top: -10px;
+}
