@@ -23,7 +23,19 @@
 
     <div class="section_wrapper" id="landingWrapper">
         <div class="section" id="landing">
-            <div style="height: 35vh;" class="hide-on-large-only"></div>
+            <div style="height: 35vh;position: relative;" class="hide-on-large-only">
+                <div style="position: absolute;right: 20px;"><a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a></div>
+                <ul id="slide-out" class="side-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Rover</a></li>
+                    <li><a href="#">Competitions</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">Our Sponsors</a></li>
+                    <li><a href="#">Support us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
             <nav>
                 <div class="nav-wrapper">
                     <a href="#" class="brand-logo"><img src="Assets/Logo.svg" alt="" class="responsive-img"></a>
@@ -68,17 +80,49 @@
             </div>
         </div>
     </div>
-
-    <div class="footer_wrapper row">
-        <div class="col m4 s12">
-            <div class="row footerMember">
-                <img src="Assets/creation_labs.svg" class="responsive-img" alt="">
-            </div>
-            <div class="row footerMember">
-                <img src="Assets/vit_logo.svg" class="responsive-img" alt="">
+    <div style="margin-top: 35px;" class="section_wrapper row">
+        <div style="width: 300px;height: 88px;margin:0 15px;" class="row s12">
+            <img src="Assets/ACHIVEMENTS.svg" alt="" class="responsive-img">
+        </div>
+        <div class="col m8 push-m2 s12" id="achieve">
+            <div style="width: 100%;height: 250px;" class="card-panel">
+                <h2 class="valign center-align">A carousel here</h2>
             </div>
         </div>
-        <div class="col m4 s12">
+    </div>
+    <div style="margin-top: 35px;" class="section_wrapper row">
+        <div style="width: 350px;height: 88px;margin:0 15px;" class="row s12">
+            <img src="Assets/RECENT.svg" alt="" class="responsive-img">
+        </div>
+        <div class="col s10 push-s1">
+        <div class="row">
+            <div class="col m8 s12">
+                <div style="width: 100%;height: 150px;" class="card-panel">
+                    <h4 class="valign center-align">Activity 1</h4>
+                </div>
+            </div>
+            <div class="col m4 s12">
+                <div style="width: 100%;height: 150px;" class="card-panel">
+                    <h4 class="valign center-align">Activity 2</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col m4 s12">
+                <div style="width: 100%;height: 150px;" class="card-panel">
+                    <h4 class="valign center-align">Activity 3</h4>
+                </div>
+            </div>
+            <div class="col m8 s12">
+                <div style="width: 100%;height: 150px;" class="card-panel">
+                    <h4 class="valign center-align">Activity 4</h4>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="footer_wrapper row">
+        <div class="col m4 push-m4 s12" style="margin-top: 25px;">
             <div style="width: 300px;height: 85px;" class="row">
                 <img src="Assets/Logo.svg" class="responsive-img" alt="">
             </div>
@@ -90,16 +134,38 @@
                 <a href="#"><span class="social"><i class="fa fa-linkedin" aria-hidden="true"></i></span></a>
             </div>
         </div>
-        <div style="position: relative;height:230px;" class="col m4 s12">
-            <div style="position: absolute;z-index:10;right: 0; width: 80%;margin-bottom: 0;" class="row hide-on-med-and-down">
+        <div class="col m4 pull-m4 s12">
+            <div class="row">
+            <div  class="col m12 s6 footerMember lImg">
+                <img src="Assets/creation_labs.svg" class="responsive-img" alt="">
+            </div>
+            <div  class="col m12 s6 footerMember lImg">
+                <img src="Assets/vit_logo.svg" class="responsive-img" alt="">
+            </div>
+            </div>
+        </div>
+
+        <div id="ieeecs_wrap" class="col m4 s12">
+            <div style="position: absolute;z-index:10;top: 25px;right: 0; width: 80%;margin-bottom: 0;" class="row hide-on-med-and-down">
                 <img src="Assets/Flogo.svg" class="responsive-img" alt="">
             </div>
-            <div style="position: absolute;top: 65%;right: 10px;height: 0; z-index:11" class="row footerMember">
+            <div id="ieeecs" class="row footerMember">
                 <img src="Assets/ieee_cs_logo.svg" class="responsive-img" alt="">
             </div>
         </div>
     </div>
     <script src="javascript/jquery.js"></script>
     <script src="javascript/materialize.min.js"></script>
+    <script>
+        $(function () {
+            $('.button-collapse').sideNav({
+                    menuWidth: 300, // Default is 300
+                    edge: 'right', // Choose the horizontal origin
+                    closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                    draggable: true // Choose whether you can drag to open on touch screens
+                }
+            );
+        });
+    </script>
 </body>
 </html>

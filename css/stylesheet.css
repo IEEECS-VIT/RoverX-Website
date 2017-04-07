@@ -4,7 +4,7 @@
 }
 .section_wrapper{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     position: relative;
@@ -32,6 +32,20 @@ nav li>a:hover{
 @media (min-width: 768px) {
     .brand-logo{
         margin-left:30px;
+    }
+    .lImg img{
+        max-width: 40%;
+    }
+    #ieeecs_wrap{
+        position: relative;
+        height:230px;
+    }
+    #ieeecs{
+        position: absolute;
+        top: 65%;
+        right: 20px;
+        height: 0;
+        z-index:11;
     }
 }
 .logoWrap{
@@ -80,8 +94,12 @@ nav li>a:hover{
     color: black;
 }
 .social:hover{
+    transition: background-color 0.5s;
     background-color:#689f38;
 }
 #blog{
     margin-top: -10px;
+}
+.button-collapse i{
+    color:#689f38;
 }
