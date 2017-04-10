@@ -55,7 +55,7 @@
                 <img src="Assets/Logo.svg" alt="" class="responsive-img" id="logoMain">
             </div>
             <div class="caretWrap">
-                <a href="#"><img src="Assets/caret.svg" class="responsive-img" alt=""></a>
+                <a data-scroll href="#about"><img src="Assets/caret.svg" class="responsive-img" alt=""></a>
             </div>
         </div>
     </div>
@@ -156,8 +156,10 @@
     </div>
     <script src="javascript/jquery.js"></script>
     <script src="javascript/materialize.min.js"></script>
+    <script src="javascript/smooth-scroll.min.js"></script>
     <script>
         $(function () {
+            smoothScroll.init();
             $('.button-collapse').sideNav({
                     menuWidth: 300, // Default is 300
                     edge: 'right', // Choose the horizontal origin
