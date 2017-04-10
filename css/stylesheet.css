@@ -103,3 +103,58 @@ nav li>a:hover{
 .button-collapse i{
     color:#689f38;
 }
+p,a{
+    font-family: 'Montserrat', sans-serif;
+}
+/*
+.Team_RoverX_is_a_group_of_young__enthusiastic_i {
+    font-size: 54.167px;
+    font-family: "Montserrat";
+    color: rgb(63, 63, 63);
+    text-align: left;
+    position: absolute;
+    left: 305.934px;
+    top: 2572.77px;
+    width: 2323px;
+    height: 961px;
+    z-index: 22;
+}
+.Rovers {
+    font-size: 50px;
+    font-family: "Montserrat";
+    color: rgb(106, 188, 0);
+    font-weight: bold;
+    text-align: left;
+    position: absolute;
+    left: 1353.938px;
+    top: 114.912px;
+    z-index: 10;
+}
+.Team_RoverX_is_a_group_of_young__enthusiastic_i {
+    font-size: 54.167px;
+    font-family: "Montserrat";
+    color: rgb(63, 63, 63);
+    text-align: left;
+    position: absolute;
+    left: 305.934px;
+    top: 2572.77px;
+    width: 2323px;
+    height: 961px;
+    z-index: 22;
+}
+.About_ROVERX {
+    font-size: 79.167px;
+    font-family: "Montserrat";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: left;
+    -moz-transform: matrix( 0.68599157000907,0,0,0.68599157000907,0,0);
+    -webkit-transform: matrix( 0.68599157000907,0,0,0.68599157000907,0,0);
+    -ms-transform: matrix( 0.68599157000907,0,0,0.68599157000907,0,0);
+    position: absolute;
+    left: -40.944px;
+    top: -51.097px;
+    z-index: 1;
+}
+*/
+
