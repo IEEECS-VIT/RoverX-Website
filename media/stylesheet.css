@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.section_wrapper{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+#landingWrapper{
+    /*margin-left: -4px;*/
+    background-image: url("../Assets/mediabg.png");
+    background-size: 100% 35vh;
+    background-repeat:no-repeat;
+    background-origin: border-box;
+}
+nav{
+    background-color: transparent;
+    box-shadow: none;
+}
+nav li a{
+    color: #689f38;
+    font-size: 20px;
+}
+nav li>a:hover{
+    color: #33691e;
+}
+.brand-logo img{
+    width: 300px;
+    height: 85px;
+}
+@media (min-width: 768px) {
+    .brand-logo{
+        margin-left:30px;
+    }
+    .lImg img{
+        max-width: 40%;
+    }
+    #ieeecs_wrap{
+        position: relative;
+        height:230px;
+    }
+    #ieeecs{
+        position: absolute;
+        top: 65%;
+        right: 20px;
+        height: 0;
+        z-index:11;
+    }
+}
+.logoWrap{
+    max-height: 10%;
+    max-width: 35%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.caretWrap{
+    margin: 5px;
+    position: absolute;
+    width: 50px;
+    height:50px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,50%);
+}
+.caretWrap :hover{
+    transition: transform 1s ease-out;
+    transform: translateY(-50%);
+}
+.footer_wrapper{
+    background-color: #212121;
+    margin: 0;
+    /*height: inherit;*/
+}
+.footerMember{
+    height: 100px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+#landingWrapper .col,#landingWrapper .row,#landingWrapper .row .col{
+    padding: 0;
+    margin: 0;
+}
+.panel1 .card-panel{
+    height: 40vh;
+    padding: 0;
+    margin: 0;
+}
+.panel2 .card-panel{
+    height: 20vh;
+    padding: 0;
+    margin: 0;
+}
+.button-collapse i{
+    color:#689f38;
+}
+p,a{
+    font-family: 'Montserrat', sans-serif;
+}
+.social{
+    display: inline-block;
+    margin-left: 10px;
+    background-color:#434343;
+    height: 25px;
+    width: 25px;
+}
+.social i{
+    font-size: 24px;
+    color: black;
+}
+.social:hover{
+    transition: background-color 0.5s;
+    background-color:#689f38;
+}
+#blog{
+    margin-top: -10px;
+}
+.button-collapse i{
+    color:#689f38;
+}
+.tabs .indicator{
+    background-color:#689f38;
+    height: 5px;
+}
+.tabs .tab a{
+    color: #689f38;
+}
+.tabs .tab a:hover, .tabs .tab a.active{
+    color: #417737;
+}
+h5{
+    width: 100%;
+}
