@@ -12,170 +12,74 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-        fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-
     <div class="section_wrapper" id="landingWrapper">
         <div class="section" id="landing">
-            <div style="height: 35vh;position: relative;" class="hide-on-large-only">
-                <div style="position: absolute;right: 20px;"><a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a></div>
-                <ul id="slide-out" style="width: 45vw;" class="side-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Rover</a></li>
-                    <li><a href="#">Competitions</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Media</a></li>
-                    <li><a href="#">Our Sponsors</a></li>
-                    <li><a href="#">Support us</a></li>
-                    <li><a href="#">Contact us</a></li>
-                </ul>
-            </div>
-            <nav>
-                <div class="nav-wrapper">
-                    <a href="#" class="brand-logo"><img src="../Assets/Logo.svg" alt="" class="responsive-img"></a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Rover</a></li>
-                        <li><a href="#">Competitions</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Media</a></li>
-                        <li><a href="#">Our Sponsors</a></li>
-                        <li><a href="#">Support us</a></li>
-                        <li><a href="#">Contact us</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="row" style="margin-top: 35vh">
-                <div class="col m8 push-m2 s12">
-                    <div class="row">
-                        <div class="col s12">
-                            <ul class="tabs">
-                                <li class="tab"><a href="#category1">category 1</a></li>
-                                <li class="tab"><a href="#category2">category 2</a></li>
-                                <li class="tab"><a href="#category3">category 3</a></li>
-                                <li class="tab"><a href="#category4">category 4</a></li>
-                            </ul>
-                        </div>
-                        <div id="category1" class="col s12">
-                           <div class="row">
-                               <div class="col s8 panel1">
-                                   <div class="card-panel hoverable valign-wrapper">
-                                       <h5 class="center-align valign"> image 1</h5>
-                                   </div>
-                               </div>
-                               <div class="col s4">
-                                   <div class="row panel2">
-                                       <div class="card-panel hoverable valign-wrapper"><h5 class="center-align valign">1</h5></div>
-                                   </div>
-                                   <div class="row panel2">
-                                       <div class="card-panel hoverable valign-wrapper"><h5 class="center-align valign">1</h5></div>
-                                   </div>
-                               </div>
-                           </div>
-                        </div>
-                        <div id="category2" class="col s12">
-                           <div class="row">
-                               <div class="col s8 panel1">
-                                   <div class="card-panel hoverable valign-wrapper">
-                                       <h5 class="center-align valign"> image 2</h5>
-                                   </div>
-                               </div>
-                               <div class="col s4">
-                                   <div class="row panel2">
-                                       <div class="card-panel hoverable valign-wrapper"><h5 class="center-align valign">2</h5></div>
-                                   </div>
-                                   <div class="row panel2">
-                                       <div class="card-panel hoverable valign-wrapper"><h5 class="center-align valign">2</h5></div>
-                                   </div>
-                               </div>
-                           </div>
-                        </div>
-                        <div id="category3" class="col s12">
-                           <div class="row">
-                               <div class="col s8 panel1">
-                                   <div class="card-panel hoverable valign-wrapper">
-                                       <h5 class="center-align valign"> image 3</h5>
-                                   </div>
-                               </div>
-                               <div class="col s4">
-                                   <div class="row panel2">
-                                       <div class="card-panel hoverable valign-wrapper"><h5 class="center-align valign">3</h5></div>
-                                   </div>
-                                   <div class="row panel2">
-                                       <div class="card-panel hoverable valign-wrapper"><h5 class="center-align valign">3</h5></div>
-                                   </div>
-                               </div>
-                           </div>
-                        </div>
-                        <div id="category4" class="col s12">
-                           <div class="row">
-                               <div class="col s8 panel1">
-                                   <div class="card-panel hoverable valign-wrapper">
-                                       <h5 class="center-align valign"> image 4</h5>
-                                   </div>
-                               </div>
-                               <div class="col s4">
-                                   <div class="row panel2">
-                                       <div class="card-panel hoverable valign-wrapper"><h5 class="center-align valign">4</h5></div>
-                                   </div>
-                                   <div class="row panel2">
-                                       <div class="card-panel hoverable valign-wrapper"><h5 class="center-align valign">4</h5></div>
-                                   </div>
-                               </div>
-                           </div>
+            <div w3-include-html="../navbar/navbar.html"></div>
+        </div>
+    </div>
+
+    <div class="section-wrapper" id="gallery">
+        <div class="row" style="margin-top: 30px;">
+            <div class="col m3 s12">
+                <div class="row">
+                    <div class="col s10 push-s1">
+                        <div class="card-panel" id="catPanel">
+                            <div class="row"><a id="ph" class="btn btn-flat">Photos</a></div>
+                            <div class="row"><a id="vid" class="btn btn-flat">Videos</a></div>
+                            <div class="row"><a id="pr" class="btn btn-flat">PR activities</a></div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col m8 s12">
+                <div class="row">
+                    <div id="category1" class="col s12">
+                        <div class="row">
+                            <div class="col s8 panel1">
+                                <div class="card-panel hoverable valign-wrapper">
+                                    <h5 class="center-align valign"> image 1</h5>
+                                </div>
+                            </div>
+                            <div class="col s4">
+                                <div class="row panel2">
+                                    <div class="card-panel hoverable valign-wrapper"><h5 class="center-align valign">1</h5></div>
+                                </div>
+                                <div class="row panel2">
+                                    <div class="card-panel hoverable valign-wrapper"><h5 class="center-align valign">1</h5></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="category2" class="col s12">
+                        <div class="row">
+                            <div class="col s8 panel1">
+                                <div class="card-panel hoverable valign-wrapper">
+                                    <h5 class="center-align valign"> image 2</h5>
+                                </div>
+                            </div>
+                            <div class="col s4">
+                                <div class="row panel2">
+                                    <div class="card-panel hoverable valign-wrapper"><h5 class="center-align valign">2</h5></div>
+                                </div>
+                                <div class="row panel2">
+                                    <div class="card-panel hoverable valign-wrapper"><h5 class="center-align valign">2</h5></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="footer_wrapper row">
-        <div class="col m4 push-m4 s12" style="margin-top: 25px;">
-            <div style="width: 300px;height: 85px;" class="row">
-                <img src="../Assets/Logo.svg" class="responsive-img" alt="">
-            </div>
-            <div style="" class="row center-align">
-                <!--<a href="#"><span id="blog" class="social"><img style="width: 80%" src="Assets/blogger.svg" class="valign responsive-img" alt=""></span></a>-->
-                <a href="#"><span class="social"><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
-                <a href="#"><span class="social"><i class="fa fa-youtube" aria-hidden="true"></i>  </span></a>
-                <a href="#"><span class="social"><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
-                <a href="#"><span class="social"><i class="fa fa-linkedin" aria-hidden="true"></i></span></a>
-            </div>
-        </div>
-        <div class="col m4 pull-m4 s12">
-            <div class="row">
-            <div  class="col m12 s6 footerMember lImg">
-                <img src="../Assets/creation_labs.svg" class="responsive-img" alt="">
-            </div>
-            <div  class="col m12 s6 footerMember lImg">
-                <img src="../Assets/vit_logo.svg" class="responsive-img" alt="">
-            </div>
-            </div>
-        </div>
-
-        <div id="ieeecs_wrap" class="col m4 s12">
-            <div style="position: absolute;z-index:10;top: 25px;right: 0; width: 80%;margin-bottom: 0;" class="row hide-on-med-and-down">
-                <img src="../Assets/Flogo.svg" class="responsive-img" alt="">
-            </div>
-            <div id="ieeecs" class="row footerMember">
-                <img src="../Assets/ieee_cs_logo.svg" class="responsive-img" alt="">
-            </div>
-        </div>
-    </div>
+    <div w3-include-html="../footer/footer.html"></div>
     <script src="../javascript/jquery.js"></script>
     <script src="../javascript/materialize.min.js"></script>
-    <script src="../javascript/smooth-scroll.min.js"></script>
+    <script src="../javascript/w3data.js"></script>
+    <script src="script.js"></script>
     <script>
-        $(function () {
-            smoothScroll.init();
+        var side=function () {
             $('.button-collapse').sideNav({
                     menuWidth: 300, // Default is 300
                     edge: 'right', // Choose the horizontal origin
@@ -183,6 +87,10 @@
                     draggable: true // Choose whether you can drag to open on touch screens
                 }
             );
+        };
+        $(function () {
+            side();
+            w3IncludeHTML();
         });
     </script>
 </body>

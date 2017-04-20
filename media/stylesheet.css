@@ -9,12 +9,14 @@
     padding: 0;
     position: relative;
 }
-#landingWrapper{
+#landingWrapper.section_wrapper{
     /*margin-left: -4px;*/
+    min-height: 400px;
     background-image: url("../Assets/mediabg.jpg");
-    background-size: 100% 35vh;
-    background-repeat:no-repeat;
-    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 100%;
+    background-size: cover;
 }
 nav{
     background-color: transparent;
@@ -50,27 +52,6 @@ nav li>a:hover{
         z-index:11;
     }
 }
-.logoWrap{
-    max-height: 10%;
-    max-width: 35%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-}
-.caretWrap{
-    margin: 5px;
-    position: absolute;
-    width: 50px;
-    height:50px;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%,50%);
-}
-.caretWrap :hover{
-    transition: transform 1s ease-out;
-    transform: translateY(-50%);
-}
 .footer_wrapper{
     background-color: #212121;
     margin: 0;
@@ -84,7 +65,7 @@ nav li>a:hover{
     margin-right: 0;
     margin-bottom: 0;
 }
-#landingWrapper .col,#landingWrapper .row,#landingWrapper .row .col{
+#gallery .row .col,.panel2{
     padding: 0;
     margin: 0;
 }
@@ -101,9 +82,15 @@ nav li>a:hover{
 .button-collapse i{
     color:#689f38;
 }
-p,a{
+.section_wrapper p,.section_wrapper a{
     font-family: 'Montserrat', sans-serif;
 }
+a.btn-flat{
+    font-family: 'Montserrat Semi-Bold', sans-serif;
+
+    font-size: large;
+}
+
 .social{
     display: inline-block;
     margin-left: 10px;
@@ -125,16 +112,19 @@ p,a{
 .button-collapse i{
     color:#689f38;
 }
-.tabs .indicator{
-    background-color:#689f38;
-    height: 5px;
-}
-.tabs .tab a{
-    color: #689f38;
-}
-.tabs .tab a:hover, .tabs .tab a.active{
-    color: #417737;
-}
 h5{
     width: 100%;
+}
+#catPanel .btn-flat{
+    width: 100%;
+}
+#catPanel .btn-flat.clicked{
+    background-color: black;
+    color: #689f38;
+}
+#catPanel .row{
+    margin: 0;
+}
+#catPanel{
+    padding: 0;
 }
