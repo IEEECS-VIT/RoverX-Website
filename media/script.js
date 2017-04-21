@@ -5,6 +5,8 @@ $('.btn-flat').click(function () {
     $(this).cousins('.btn-flat').children('i').addClass('caret');
 });
 
+
+// Cousins snippet
 (function($) {
     $.fn.cousins = function(selector) {
         var cousins;
@@ -27,4 +29,5 @@ $('.btn-flat').click(function () {
         });
         return cousins;
     }
-})(jQuery)
+})(jQuery);
+//end of cousins snippet
