@@ -1,6 +1,8 @@
 $('.btn-flat').click(function () {
     $(this).addClass('clicked');
+    $(this).children().removeClass('caret');
     $(this).cousins('.btn-flat').removeClass('clicked');
+    $(this).cousins('.btn-flat').children('i').addClass('caret');
 });
 
 (function($) {

@@ -128,3 +128,16 @@ h5{
 #catPanel{
     padding: 0;
 }
+.btn-flat .fa.fa-caret-left{
+    font-size: 2em;
+    position: absolute;
+    z-index: 15;
+    right: 0;
+}
+.btn-flat.btn{
+    padding: 0;
+    position: relative;
+}
+.caret{
+    visibility: hidden;
+}
