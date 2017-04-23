@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RoverX</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="section_wrapper" id="landingWrapper">
+        <div class="section" id="landing">
+            <div class="flex-item" w3-include-html="../navbar/navbar.html"></div>
+            <div id="overlayWrap" class="row flex-item hide-on-small-and-down">
+                <div id="overlay" class="col m4 s12 push-m8" >
+                    <div id="overlayArrow"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="center-align grey-text text-darken-2">Title Sponsors</h2>
+    <div class="section-wrapper">
+        <div class="container">
+            <div class="row">
+                <div style="margin-top: 30px;" class="col m4 s6"><img title="IEEE COMPUTER SOCIETY" src="../Assets/ieee_cs_logo.svg" class="responsive-img" style="max-height: 100px;" alt=""></div>
+                <div style="margin-top: 30px;" class="col m4 s6"><img title="IEEE COMPUTER SOCIETY" src="../Assets/ieee_cs_logo.svg" class="responsive-img" style="max-height: 100px;" alt=""></div>
+                <div style="margin-top: 30px;" class="col m4 s6"><img title="IEEE COMPUTER SOCIETY" src="../Assets/ieee_cs_logo.svg" class="responsive-img" style="max-height: 100px;" alt=""></div>
+            </div>
+            <div class="row">
+                <div style="margin-top: 30px;" class="col m4 s12 push-m2"><img title="IEEE COMPUTER SOCIETY" src="../Assets/ieee_cs_logo.svg" class="responsive-img" style="max-height: 100px;" alt=""></div>
+                <div style="margin-top: 30px;" class="col m4 s12 push-m2"><img title="IEEE COMPUTER SOCIETY" src="../Assets/ieee_cs_logo.svg" class="responsive-img" style="max-height: 100px;" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <h2 class="center-align grey-text text-darken-2">Gold Sponsors</h2>
+    <div class="section-wrapper">
+        <div class="container">
+            <div class="row">
+                <div style="margin-top: 30px;" class="col m4 s12 push-m2"><img title="IEEE COMPUTER SOCIETY" src="../Assets/ieee_cs_logo.svg" class="responsive-img" style="max-height: 100px;" alt=""></div>
+                <div style="margin-top: 30px;" class="col m4 s12 push-m2"><img title="IEEE COMPUTER SOCIETY" src="../Assets/ieee_cs_logo.svg" class="responsive-img" style="max-height: 100px;" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <h2 class="center-align grey-text text-darken-2">Silver Sponsors</h2>
+    <div class="section-wrapper">
+        <div class="container">
+            <div class="row">
+                <div style="margin-top: 30px;" class="col m4 s12 push-m2"><img title="IEEE COMPUTER SOCIETY" src="../Assets/ieee_cs_logo.svg" class="responsive-img" style="max-height: 100px;" alt=""></div>
+                <div style="margin-top: 30px;" class="col m4 s12 push-m2"><img title="IEEE COMPUTER SOCIETY" src="../Assets/ieee_cs_logo.svg" class="responsive-img" style="max-height: 100px;" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <h2 class="center-align grey-text text-darken-2">Bronze Sponsors</h2>
+    <div class="section-wrapper">
+        <div class="container">
+            <div class="row">
+                <div style="margin-top: 30px;" class="col m4 s12 push-m2"><img title="IEEE COMPUTER SOCIETY" src="../Assets/ieee_cs_logo.svg" class="responsive-img" style="max-height: 100px;" alt=""></div>
+                <div style="margin-top: 30px;" class="col m4 s12 push-m2"><img title="IEEE COMPUTER SOCIETY" src="../Assets/ieee_cs_logo.svg" class="responsive-img" style="max-height: 100px;" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div w3-include-html="../footer/footer.html"></div>
+    <script src="../javascript/jquery.js"></script>
+    <script src="../javascript/materialize.min.js"></script>
+    <script src="../javascript/w3data.js"></script>
+    <script src="script.js"></script>
+    <script src="picturehover.min.js"></script>
+    <script>
+        var side=function () {
+            $('.button-collapse').sideNav({
+                    menuWidth: 300, // Default is 300
+                    edge: 'right', // Choose the horizontal origin
+                    closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                    draggable: true // Choose whether you can drag to open on touch screens
+                }
+            );
+        };
+        $('.row').picturehover()
+        $(function () {
+            side();
+            w3IncludeHTML();
+        });
+    </script>
+</body>
+</html>
