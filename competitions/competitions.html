@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RoverX</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="section_wrapper" id="landingWrapper">
+        <div class="section" id="landing">
+            <div class="flex-item" w3-include-html="../navbar/navbar.html"></div>
+            <div id="overlayWrap" class="row flex-item hide-on-small-and-down">
+                <div id="overlay" class="col m4 s12 push-m8" >
+                    <div id="overlayArrow"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-wrapper" id="competitions">
+      <h1><span class="green-text">C</span>ompetitions</h1>
+        <div class="row competitions-list" style="margin-top: 30px;">
+          <div class="row competition">
+            <div class="col s12 m3 l3 competition-left">
+              <h5 style="text-align: center"><span class="green-text">ERC:<br></span>European Rover Challenge</h5>
+            </div>
+            <div class="col s12 m9 l9 competition-right">
+              Challenge is the biggest robotics-space event in Europe. ERC is a part of Rover Challenge Series – the most prestigious robotics challenge league.
+            </div>
+          </div>
+          <br>
+          <div class="row competition">
+
+            <div class="col s12 m9 l9 competition-right">
+              Challenge is the biggest robotics-space event in Europe. ERC is a part of Rover Challenge Series – the most prestigious robotics challenge league.
+            </div>
+            <div class="col s12 m3 l3 competition-left">
+              <h5 style="text-align: center"><span class="green-text">ERC:<br></span>European Rover Challenge</h5>
+            </div>
+          </div>
+          <br>
+          <div class="row competition">
+            <div class="col s12 m3 l3 competition-left">
+              <h5 style="text-align: center"><span class="green-text">ERC:<br></span>European Rover Challenge</h5>
+            </div>
+            <div class="col s12 m9 l9 competition-right">
+              Challenge is the biggest robotics-space event in Europe. ERC is a part of Rover Challenge Series – the most prestigious robotics challenge league.
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div w3-include-html="../footer/footer.html"></div>
+    <script src="../javascript/jquery.js"></script>
+    <script src="../javascript/materialize.min.js"></script>
+    <script src="../javascript/w3data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        var side=function () {
+            $('.button-collapse').sideNav({
+                    menuWidth: 300, // Default is 300
+                    edge: 'right', // Choose the horizontal origin
+                    closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                    draggable: true // Choose whether you can drag to open on touch screens
+                }
+            );
+        };
+        $(function () {
+            side();
+            w3IncludeHTML();
+        });
+    </script>
+</body>
+</html>
