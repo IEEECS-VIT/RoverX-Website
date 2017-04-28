@@ -21,7 +21,7 @@
         fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
-    <ul id="slide-out" style="width: 45vw;" class="side-nav">
+    <ul id="slide-out" style="width: 45vw;z-index: 9999" class="side-nav">
         <li><a href="#">Home</a></li>
         <li><a href="rovers/rovers.html">Rover</a></li>
         <li><a href="competitions/competitions.html">Competitions</a></li>
@@ -47,7 +47,7 @@
                 </ul>
             </div>
         </div>
-        <div class="section_wrapper" style="z-index: 9999">
+        <div class="section_wrapper" style="z-index: 9990">
             <div style="height: 35vh;position: relative;" class="hide-on-large-only">
                 <div style="position: absolute;right: 20px;"><a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a></div>
             </div>
@@ -99,9 +99,38 @@
         <div style="width: 300px;height: 88px;margin:0 15px;" class="row s12">
             <img src="Assets/ACHIVEMENTS.svg" alt="" class="responsive-img">
         </div>
-        <div class="col m8 push-m2 s12" id="achieve">
+        <div class="col m8 push-m2 s12" id="achieve" style="position: absolute;top: 50%;transform: translateY(-50%)">
             <div style="width: 100%;height: 250px;" class="card-panel">
-                <h2 class="valign center-align">A carousel here</h2>
+                <div style="width: 100%;" class="carousel carousel-slider center">
+                    <div class="carousel-item white-text" style="background-image: url('http://lorempixel.com/900/250/nature/4')" href="#one!" >
+                        <!--<img src="http://lorempixel.com/800/400/food/1">-->
+                        <div class="overlay2">
+                            <div class="col s4">
+                                <h2>Second Panel</h2>
+                            </div>
+                            <div class="col s8">
+                                <h2>Details</h2>
+                                <p class="white-text">text text text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item white-text" style="background-image: url('http://lorempixel.com/900/250/nature/2')" href="#two!">
+                        <h2>Second Panel</h2>
+                        <p class="white-text">This is your second panel</p>
+                    </div>
+                    <div class="carousel-item white-text" style="background-image: url('http://lorempixel.com/900/250/nature/3')" href="#three!">
+                        <h2>Third Panel</h2>
+                        <p class="white-text">This is your third panel</p>
+                    </div>
+                    <div class="carousel-item white-text" style="background-image: url('http://lorempixel.com/900/250/nature/5')" href="#four!">
+                        <h2>Fourth Panel</h2>
+                        <p class="white-text">This is your fourth panel</p>
+                    </div>
+                </div>
+                <div class="slide-arrow">
+                    <a id="left-scroll" class="left"><img src="Assets/caret.svg" class="responsive-img" style="transform: rotate(90deg);" alt=""></a>
+                    <a id="right-scroll" class="right"><img src="Assets/caret.svg" class="responsive-img" style="transform: rotate(270deg);" alt=""></a>
+                </div>
             </div>
         </div>
     </div>
@@ -191,7 +220,14 @@
                 }
             );
         });
+        $('#right-scroll').click(function () {
+            $('.carousel').carousel('next');
+        });
+        $('#left-scroll').click(function () {
+            $('.carousel').carousel('prev');
+        });
         $('.slider').slider({full_width: true,indicators:false});
+        $('.carousel.carousel-slider').carousel({fullWidth: true,indicators:false});
     </script>
 </body>
 </html>

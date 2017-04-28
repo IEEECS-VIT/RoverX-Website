@@ -114,7 +114,7 @@ nav li>a:hover{
 p,a{
     font-family: 'Montserrat', sans-serif;
 }
-.overlay{
+.overlay,.overlay2{
     background-color: rgba(8,2,3,0.41);
     flex-grow: 1;
 }
@@ -134,6 +134,28 @@ p,a{
 .overlay:hover{
     transition: backgroung-color 0.3s ease-in;
     background-color: rgba(106, 188, 0, 0.62);
+}
+.slide-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+#left-scroll,#right-scroll{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+#left-scroll{
+    transform: translateX(-50%);
+}
+.carousel-item{
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex !important;
+    flex-direction: column;
 }
 /*
 .Team_RoverX_is_a_group_of_young__enthusiastic_i {
