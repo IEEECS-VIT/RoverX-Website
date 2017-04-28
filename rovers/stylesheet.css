@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat';
 }
 .section_wrapper{
     width: 100%;
@@ -59,6 +60,9 @@ nav{
 nav li a{
     color: #689f38;
     font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 600;
 }
 nav li>a:hover{
     color: #33691e;
@@ -124,8 +128,8 @@ a.btn-flat{
 
     font-size: large;
 }
-
 .social{
+    color: black;
     display: inline-block;
     margin-left: 10px;
     background-color:#434343;
@@ -134,11 +138,11 @@ a.btn-flat{
 }
 .social i{
     font-size: 24px;
-    color: black;
+    color: inherit;
 }
 .social:hover{
-    transition: background-color 0.5s;
-    background-color:#689f38;
+    transition: color 0.5s;
+    color:#689f38;
 }
 #blog{
     margin-top: -10px;

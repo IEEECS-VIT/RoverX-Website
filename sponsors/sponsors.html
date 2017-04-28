@@ -12,16 +12,16 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div class="section_wrapper" id="landingWrapper">
-        <div class="section" id="landing">
-            <div class="flex-item" w3-include-html="../navbar/navbar.html"></div>
-            <div id="overlayWrap" class="row flex-item hide-on-small-and-down">
-                <div id="overlay" class="col m4 s12 push-m8" >
-                    <div id="overlayArrow"></div>
-                </div>
+<div class="section_wrapper" id="landingWrapper">
+    <div class="section" id="landing">
+        <div class="flex-item" id="head"></div>
+        <div id="overlayWrap" class="row flex-item hide-on-small-and-down">
+            <div id="overlay" class="col m4 s12 push-m8" >
+                <div id="overlayArrow"></div>
             </div>
         </div>
     </div>
+</div>
     <h2 class="center-align grey-text text-darken-2">Title Sponsors</h2>
     <div class="section-wrapper">
         <div class="container">
@@ -64,12 +64,12 @@
         </div>
     </div>
 
-    <div w3-include-html="../footer/footer.html"></div>
+    <div id="footer"></div>
     <script src="../javascript/jquery.js"></script>
     <script src="../javascript/materialize.min.js"></script>
-    <script src="../javascript/w3data.js"></script>
-    <script src="script.js"></script>
+    <script src="../javascript/inc.js"></script>
     <script src="picturehover.min.js"></script>
+    <script src="script.js"></script>
     <script>
         var side=function () {
             $('.button-collapse').sideNav({
@@ -80,10 +80,10 @@
                 }
             );
         };
-        $('.row').picturehover()
         $(function () {
-            side();
-            w3IncludeHTML();
+            $('.row').picturehover();
+            $('#head').inc('../navbar/navbar.html',null,side);
+            $('#footer').inc('../footer/footer.html');
         });
     </script>
 </body>

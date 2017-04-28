@@ -12,17 +12,16 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div class="section_wrapper" id="landingWrapper">
-        <div class="section" id="landing">
-            <div class="flex-item" w3-include-html="../navbar/navbar.html"></div>
-            <div id="overlayWrap" class="row flex-item hide-on-small-and-down">
-                <div id="overlay" class="col m4 s12 push-m8" >
-                    <div id="overlayArrow"></div>
-                </div>
+<div class="section_wrapper" id="landingWrapper">
+    <div class="section" id="landing">
+        <div class="flex-item" id="head"></div>
+        <div id="overlayWrap" class="row flex-item hide-on-small-and-down">
+            <div id="overlay" class="col m4 s12 push-m8" >
+                <div id="overlayArrow"></div>
             </div>
         </div>
     </div>
-
+</div>
     <div class="section_wrapper" id="main">
         <div class="row">
             <h3><span class="greenText">S</span>upport <span class="greenText">U</span>s</h3>
@@ -606,11 +605,12 @@ CGCei/YD+JKvMEV1hQTVlQYeGoVG+to3Bde9VF33FmCUIJs9LgzhMQl00zcEcDcHaLaxKfuzKTk7
         </div>
     </div>
 
-    <div w3-include-html="../footer/footer.html"></div>
+    <div id="footer"></div>
     <script src="../javascript/jquery.js"></script>
     <script src="../javascript/materialize.min.js"></script>
-    <script src="../javascript/w3data.js"></script>
     <script src="../javascript/smooth-scroll.min.js"></script>
+    <script src="../javascript/inc.js"></script>
+    <script src="script.js"></script>
     <script>
         var side=function () {
             $('.button-collapse').sideNav({
@@ -623,8 +623,8 @@ CGCei/YD+JKvMEV1hQTVlQYeGoVG+to3Bde9VF33FmCUIJs9LgzhMQl00zcEcDcHaLaxKfuzKTk7
         };
         $(function () {
             smoothScroll.init();
-            side();
-            w3IncludeHTML();
+            $('#head').inc('../navbar/navbar.html',null,side);
+            $('#footer').inc('../footer/footer.html');
         });
     </script>
 </body>
