@@ -114,6 +114,27 @@ nav li>a:hover{
 p,a{
     font-family: 'Montserrat', sans-serif;
 }
+.overlay{
+    background-color: rgba(8,2,3,0.41);
+    flex-grow: 1;
+}
+.card-panel{
+    padding: 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-panel h4{
+    color: white;
+    width: 100%;
+}
+.overlay:hover{
+    transition: backgroung-color 0.3s ease-in;
+    background-color: rgba(106, 188, 0, 0.62);
+}
 /*
 .Team_RoverX_is_a_group_of_young__enthusiastic_i {
     font-size: 54.167px;
@@ -150,6 +171,17 @@ p,a{
     height: 961px;
     z-index: 22;
 }
+.Layer_8 {
+  background-image: url("Layer 8.png");
+  opacity: 0.62;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 3840px;
+  height: 7780px;
+  z-index: 46;
+}
+
 .About_ROVERX {
     font-size: 79.167px;
     font-family: "Montserrat";
