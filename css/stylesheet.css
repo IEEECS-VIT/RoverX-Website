@@ -56,12 +56,14 @@ nav li>a:hover{
     }
 }
 .logoWrap{
-    max-height: 10%;
-    max-width: 35%;
+    /*max-height: 10%;*/
+    /*max-width: 35%;*/
     position: absolute;
-    left: 50%;
+    z-index: 9999;
+    /*left: 50%;*/
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translateY(-50%);
+    /*transform: translate(-50%,-50%);*/
 }
 .caretWrap{
     margin: 5px;
