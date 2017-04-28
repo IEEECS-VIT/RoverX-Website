@@ -3,6 +3,9 @@
     padding: 0;
     font-family: 'Montserrat';
 }
+#landing{
+    padding: 0;
+}
 .section_wrapper{
     width: 100%;
     min-height: 100vh;
@@ -10,11 +13,11 @@
     padding: 0;
     position: relative;
 }
-#landingWrapper{
-    /*margin-left: -4px;*/
-    background-image: url("../Assets/bg.gif");
-    background-size: cover;
-}
+/*#landingWrapper{*/
+    /*!*margin-left: -4px;*!*/
+    /*background-image: url("../Assets/bg.gif");*/
+    /*background-size: cover;*/
+/*}*/
 nav{
     background-color: transparent;
     box-shadow: none;
