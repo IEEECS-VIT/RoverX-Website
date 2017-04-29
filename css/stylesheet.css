@@ -159,6 +159,23 @@ p,a{
     display: flex !important;
     flex-direction: column;
 }
+h5,h3,h4{
+    margin: 0 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+h3{
+    font-size: 54px;
+    font-weight: 600;
+}
+h4{
+    font-size: 36px;
+    font-weight: 600;
+}
+.greenText{
+    color:#689f38;
+    font-size: larger;
+}
 /*
 .Team_RoverX_is_a_group_of_young__enthusiastic_i {
     font-size: 54.167px;
