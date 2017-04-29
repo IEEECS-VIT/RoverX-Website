@@ -59,6 +59,8 @@
     <script src="../javascript/jquery.js"></script>
     <script src="../javascript/materialize.min.js"></script>
     <script src="../javascript/inc.js"></script>
+    <script src="../javascript/smooth-scroll.min.js"></script>
+    <script src="../javascript/scrollTop.js"></script>
     <script src="script.js"></script>
     <script>
         var side=function () {
@@ -69,6 +71,7 @@
                     draggable: true // Choose whether you can drag to open on touch screens
                 }
             );
+            $('.dropdown-button').dropdown();
         };
         $(function () {
             $('#head').inc('../navbar/navbar.html',null,side);
