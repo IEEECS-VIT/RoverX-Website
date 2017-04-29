@@ -7,7 +7,7 @@ function scrollFunction() {
         $("nav").css({'background-color':'#212121'});
     } else {
         $('#Totop').addClass('scale-transition scale-out');
-        $(".brand-logo img").stop(true,true).animate({width:"300px"},400).css('margin-top','');
+        $(".brand-logo img").animate({width:"300px"},400).css('margin-top','');
         $("nav").css('background-color','transparent');
         if(indexPage)
         {
