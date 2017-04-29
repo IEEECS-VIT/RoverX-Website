@@ -87,6 +87,11 @@ nav li>a:hover{
         z-index:11;
     }
 }
+@media (max-width: 767px) {
+    .brand-logo{
+
+    }
+}
 .footer_wrapper{
     background-color: #212121;
     margin: 0;
