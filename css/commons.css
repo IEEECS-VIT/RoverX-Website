@@ -30,6 +30,9 @@ h4{
     font-size: 36px;
     font-weight: 600;
 }
+h1{
+    font-weight: 900;
+}
 .greenText{
     color:#689f38;
     font-size: larger;
