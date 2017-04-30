@@ -88,7 +88,9 @@
             <div class="logoWrap" style="width: 100%;z-index: 501">
                 <div class="container">
                     <div class="row">
-                        <div class="col m6 push-m3 s8 push-s2"><img  src="Assets/Logo.svg" alt="" class="responsive-img" id="logoMain"></div>
+                        <div>
+                            <h2 class="center-align"><span class="white-text">EXPLORE BEYOND THE <span id="type" class="greenText">POSSIBLE</span></span></h2>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -257,7 +259,13 @@
     <script src="javascript/smooth-scroll.min.js"></script>
     <script src="javascript/javascript.js"></script>
     <script src="javascript/scrollTop.js"></script>
+    <script src="javascript/jquery.typeout.min.js"></script>
     <script>
+        $('#type').typeOut({
+            delay : 90, // the delay between display of characters
+            preserve : true, // Maintains HTML within the element
+            marker : '|' // the marker that is placed before the typed text
+        });
         $(function () {
             smoothScroll.init();
             $('.button-collapse').sideNav({
