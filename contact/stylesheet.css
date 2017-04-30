@@ -1,8 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat';
-}
+
 .section_wrapper{
     width: 100%;
     min-height: 100vh;
@@ -21,10 +17,6 @@
     display: flex;
     flex-direction: column;
     padding: 0;
-}
-.brand-logo img{
-    width: 300px;
-    height: 85px;
 }
 .flex-item{
     flex-basis: auto;
@@ -54,57 +46,6 @@
     bottom: 15px;
     transform: translateX(-100%);
 }
-nav{
-    background-color: transparent;
-    box-shadow: none;
-}
-.nav-wrapper nav li a{
-    color: #689f38;
-    font-size: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-weight: 600;
-}
-nav li>a:hover{
-    color: #33691e;
-}
-@media (min-width: 768px) {
-    .brand-logo{
-        margin-left:30px;
-    }
-    .lImg img{
-        max-width: 40%;
-    }
-    #ieeecs_wrap{
-        position: relative;
-        height:230px;
-    }
-    #ieeecs{
-        position: absolute;
-        top: 65%;
-        right: 20px;
-        height: 0;
-        z-index:11;
-    }
-}
-@media (max-width: 767px) {
-    .brand-logo{
-
-    }
-}
-.footer_wrapper{
-    background-color: #212121;
-    margin: 0;
-    /*height: inherit;*/
-}
-.footerMember{
-    height: 100px;
-    width: 150px;
-    margin-top: 20px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-}
 .button-collapse i{
     color:#689f38;
 }
@@ -113,47 +54,8 @@ nav li>a:hover{
     font-weight: 400;
     font-size: 20px;
 }
-
-a.btn-flat{
-    font-family: 'Montserrat Semi-Bold', sans-serif;
-
-    font-size: large;
-}
-.social{
-    color: black;
-    display: inline-block;
-    margin-left: 10px;
-    background-color:#434343;
-    height: 25px;
-    width: 25px;
-}
-.social i{
-    font-size: 24px;
-    color: inherit;
-}
-.social:hover{
-    transition: color 0.5s;
-    color:#689f38;
-}
-#blog{
-    margin-top: -10px;
-}
-.greenText{
-    color:#689f38;
-    font-size: larger;
-}
 .button-collapse i{
     color:#689f38;
-}
-h5,h3{
-    margin-left: 15px;
-    margin-right: 15px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-}
-h3{
-    font-size: 54px;
-    font-weight: 600;
 }
 #supportWrap{
     min-height: 75vh;
