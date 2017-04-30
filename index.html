@@ -21,17 +21,27 @@
         fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
+
     <ul id="team" class="dropdown-content">
         <li><a href="team/team.html">Team 1</a></li>
         <li><a href="team/team.html">Team 2</a></li>
         <li><a href="team/team.html">Team 3</a></li>
     </ul>
-    <ul id="slide-out" style="width: 45vw;" class="side-nav">
+    <ul id="slide-out" style="width: 45vw;" class="side-nav collapsible">
         <li><a href="#">Home</a></li>
         <li><a href="rovers/rovers.html">Rover</a></li>
         <li><a href="competitions/competitions.html">Competitions</a></li>
         <!--<li><a href="team/team.html">Team</a></li>-->
-        <li><a class="dropdown-button" href="#!" data-activates="team">Team<i class="fa fa-caret-down right"></i></a></li>
+        <li>
+            <a class="collapsible-header" href="#!" data-activates="team">Team<i class="fa fa-caret-down right"></i></a>
+            <div class="collapsible-body">
+                <ul>
+                    <li><a href="team/team.html">Team 1</a></li>
+                    <li><a href="team/team.html">Team 2</a></li>
+                    <li><a href="team/team.html">Team 3</a></li>
+                </ul>
+            </div>
+        </li>
         <li><a href="media/media.html">Media</a></li>
         <li><a href="sponsors/sponsors.html">Our Sponsors</a></li>
         <li><a href="contact/contact.html">Support us</a></li>
@@ -205,13 +215,13 @@
         </div>
     </div>
     <div class="footer_wrapper row" >
-        <div class="col m4 s12 push-m8">
+        <div class="col m4 s12 push-m8" style="padding: 20px 10px 0;">
             <!--style="background-size: cover;background: url('Assets/Flogo.svg') no-repeat bottom;"-->
-            <div class="right-align white-text" >
+            <div id="contact_footer" class=" white-text" >
                 <h5 style="margin: 0;">Contact us !</h5>
-                <div style="width: 100%;height: 1px;"><span class="divider right" style="width: 40%;"></span></div>
+                <div style="width: 100%;height: 1px;"><span class="divider right" style="width: 100%;"></span></div>
                 <br>
-                <p ><i class="fa fa-map-marker"></i>  VIT University, Vellore</p>
+                <p><i class="fa fa-map-marker"></i>  VIT University, Vellore</p>
                 <p>Tamil Nadu</p>
                 <br>
                 <p style="font-size: larger">Person 1</p>
@@ -222,12 +232,12 @@
                 <p><i class="fa fa-envelope"></i>  xyz@abc.com</p>
             </div>
         </div>
-        <div class="col m4 s12 pull-m4">
-            <div class="row"><img style="width: 300px;" src="Assets/Logo.svg" class="responsive-img" alt=""></div>
-            <div class="row"><img style="width: 200px;" src="Assets/creation_labs.svg" class="responsive-img" alt=""></div>
-            <div class="row"><img style="width: 200px;" src="Assets/vit_logo.svg" class="responsive-img" alt=""></div>
+        <div class="col m4 s12 pull-m4" style="padding: 20px 10px 0;">
+            <div class="row footerMember"><img style="width: 300px;" src="Assets/Logo.svg" class="responsive-img" alt=""></div>
+            <div class="row footerMember"><img style="width: 200px;" src="Assets/creation_labs.svg" class="responsive-img" alt=""></div>
+            <div class="row footerMember"><img style="width: 200px;" src="Assets/vit_logo.svg" class="responsive-img" alt=""></div>
         </div>
-        <div class="col m4 s12 pull-m4">
+        <div class="col m4 s12 pull-m4" style="padding: 20px 10px 0;">
             <div class="row center-align" style="margin-top: 50px;">
                 <a href="#"><span class="social"><i class="fa fa-twitter" aria-hidden="true"></i></span></a>
                 <a href="#"><span class="social"><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
