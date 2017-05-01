@@ -9,13 +9,12 @@
     padding: 0;
     margin: 0;
 }
-.panel1 .card-panel{
-    height: 40vh;
+.panel1 .card{
     padding: 0;
     margin: 0;
 }
-.panel2 .card-panel{
-    height: 20vh;
+.panel2 .card{
+    /*height: 20vh;*/
     padding: 0;
     margin: 0;
 }

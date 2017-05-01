@@ -3,9 +3,15 @@ $('.btn-flat').click(function () {
     $(this).children().removeClass('caret');
     $(this).cousins('.btn-flat').removeClass('clicked');
     $(this).cousins('.btn-flat').children('i').addClass('caret');
+    // -----------Dynamic Behaviour-----------------
+    var id=$(this).attr('id'),sel='#';
+    id+='_c';
+    sel+=id;
+    $(sel).removeClass('hide');
+    $(sel).siblings('.cont').addClass('hide');
 });
 
-
+var indexPage=false;
 // Cousins snippet
 (function($) {
     $.fn.cousins = function(selector) {

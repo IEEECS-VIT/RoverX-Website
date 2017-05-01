@@ -40,7 +40,7 @@
 p,a{
     font-family: 'Montserrat', sans-serif;
 }
-.overlay,.overlay2{
+.overlay,.overlay2,#landData{
     background-color: rgba(8,2,3,0.41);
     flex-grow: 1;
 }
@@ -78,8 +78,8 @@ p,a{
     transform: translateX(-50%);
 }
 .carousel-item{
-    background-repeat: no-repeat;
     background-size: cover;
+    background: no-repeat bottom;
     display: flex !important;
     flex-direction: column;
 }
