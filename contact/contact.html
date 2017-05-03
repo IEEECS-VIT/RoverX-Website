@@ -21,14 +21,13 @@
 
     <div class="section_wrapper" id="main">
         <div class="row">
-
         </div>
         <div id="supportWrap">
             <div id="support">
                 <h5 style="font-size: 30px;">Why do we need your <br> <span class="greenText">Support ?</span></h5>
                 <div class="container" style="flex-grow: 1;">
                     <p>
-                        Engineering is a form of art and has filled the world with things of visual beauty but also with subtle details. We wish to present the best of our skills by making a mark in competitions we participate in and explore the full potential of engineering. To outperform other teams on an international level, our technical advancements must be very high and that requires huge funding. Student projects are allotted a limited amount for competition purposes by the University, thereby seeking the need for external funding is a necessity.
+                        Join us in our quest to innovate our way to success. Our team is driven by ambitious, creative young individuals whose problem-solving skills can only evolve with your support. Tackling such challenging tasks in competitions mould us into modern-day ready engineers and creators. Working on a project like ours calls for bright, imaginative minds who are willing to put in the hours to get the job done. A small push can propel us to our goals. Providing us with a platform to succeed will go a long way in reaching new heights.
                     </p>
                     <p>
                         Sponsoring us will provide you with an excellent brand value and enhance your international
@@ -45,6 +44,10 @@
                     </p>
                 </div>
             </div>
+        </div>
+        <div id="brochure" class="row">
+          <a id="link" href="http://res.cloudinary.com/team-roverx/image/upload/v1493459460/brochure/Team_RoverX_Sponsorship_Proposal.pdf" target="_blank"></a>
+          <p style="text-align: center"><img title="Download Brochure" src="http://res.cloudinary.com/team-roverx/image/upload/v1493792187/brochure/brochure_front.jpg" style="width: 25%"></p>
         </div>
         <div class="row" id="contactFocus">
             <h3><span class="greenText">C</span>ontact <span class="greenText">U</span>s</h3>
@@ -92,6 +95,7 @@
     <script src="../javascript/materialize.min.js"></script>
     <script src="../javascript/smooth-scroll.min.js"></script>
     <script src="../javascript/inc.js"></script>
+    <script src="picturehover.min.js"></script>
     <script src="../javascript/smooth-scroll.min.js"></script>
     <script src="../javascript/scrollTop.js"></script>
     <script src="script.js"></script>
@@ -108,8 +112,14 @@
         };
         $(function () {
             smoothScroll.init();
+            $('#brochure').picturehover();
             $('#head').inc('../navbar/navbar.html',null,side);
             $('#footer').inc('../footer/footer.html');
+        });
+        $(document).ready(function(){
+          $(document).on('click', '.hover-over', function(){
+            window.open($('#link').attr('href'), '_blank');
+          })
         });
     </script>
 </body>
