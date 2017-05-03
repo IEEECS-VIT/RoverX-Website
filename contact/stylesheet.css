@@ -97,3 +97,9 @@
   background: rgba(106,188,0,0.5)!important;
   z-index: -1;
 }
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 600px){
+  #brochure img{
+    width: 80%!important;
+  }
+}
