@@ -47,3 +47,11 @@
 .caret{
     visibility: hidden;
 }
+@media (min-width: 768px) {
+    .vp1 .video-container{
+        margin-right: 10px;
+    }
+    .vp2 .video-container{
+        margin-left: 10px;
+    }
+}
