@@ -41,7 +41,7 @@
 }
 #supportWrap{
     min-height: 75vh;
-    background: url("../Assets/support.jpg") no-repeat;
+    /*background: url("../Assets/support.jpg") no-repeat;*/
     background-position-x: 0;
     background-position-y: 80%;
     background-size: cover;
@@ -49,8 +49,9 @@
     flex-direction:column;
 }
 #support{
-    background-color: rgba(8, 2, 3, 0.71);
+    /*background-color: rgba(8, 2, 3, 0.71);*/
     flex-grow: 1;
+    color: black;
 }
 #costBlack{
     flex-grow: 1;
@@ -58,7 +59,7 @@
     display: flex;
 }
 #support p,#support h5{
-    color: white;
+    color: black;
 }
 #contact{
     background-color: #272727;
