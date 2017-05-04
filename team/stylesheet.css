@@ -14,3 +14,11 @@
 .card .card-reveal{
     background-color: rgba(241,242,242,0.41);
 }
+.card {
+    min-height: 450px;
+}
+.card .card-image{
+    /*min-height: 300px !important;*/
+    max-height: none !important;
+    height: 300px !important;
+}
