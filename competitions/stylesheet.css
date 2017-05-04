@@ -111,11 +111,16 @@ h5{
 #competitions .competition h5 .green-text{
   /*font-size: 3.2rem;*/
 }
+.competition-left h5{
+  padding-top: 15%;
+  font-size: 180%!important;
+}
 .competition{
   box-shadow: -2px 5px 15px rgba(0,0,0,0.5);
 }
 #competitions .competition .competition-right{
-  background: url('../Assets/competitions_back.png');
+  /*background: url('../Assets/competitions_back.png');*/
+  background: black;
   min-height: 25vh;
   color: white;
   background-size: cover;
