@@ -5,4 +5,9 @@ $(document).ready(function(){
     minSlides: 1,
     slideMargin: 10
   });
+  $('#achieve').bxSlider({
+    mode: 'vertical',
+    minSlides: 1,
+    slideMargin: 10
+  });
 });
