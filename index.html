@@ -131,7 +131,7 @@
     </div>
     <div style="margin-top: 35px;" class="section_wrapper row">
         <div>
-            <h4><span class="greenText">A</span>cheievements</h4>
+            <h4><span class="greenText">A</span>chievements</h4>
         </div>
         <div class="col m8 push-m2 s12" id="achieve" style="position: absolute;top: 50%;transform: translateY(-50%)">
             <div style="width: 100%;height: 250px;" class="card-panel">
@@ -318,6 +318,11 @@
         });
         $('.slider').slider({full_width: true,indicators:false,interval:3000});
         $('.carousel.carousel-slider').carousel({fullWidth: true,indicators:false});
+        autoplay();
+        function autoplay() {
+            $('.carousel').carousel('next');
+            setTimeout(autoplay, 4500);
+        }
     </script>
 </body>
 </html>

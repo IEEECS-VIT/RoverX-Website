@@ -15,10 +15,10 @@
     background-color: rgba(241,242,242,0.41);
 }
 .card {
-    min-height: 450px;
+    min-height: 250px;
 }
 .card .card-image{
     /*min-height: 300px !important;*/
     max-height: none !important;
-    height: 300px !important;
+    height: 250px !important;
 }
